@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer for Tasks</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <script defer src="index.js"></script>
+    
+</head>
+
+<body class="LightTheme">
+
+    <div id="box">
+  
+      <div id="countdownBox">
+        
+        <h2>COUNTDOWN</h2>
+
+        <form class="Form">
+
+          <input type="number" min="1" id="time-input" placeholder="Enter Countdown">
+
+          <select name="format">
+            <option value="hours">Hour(s)</option>
+            <option value="minutes">Minute(s)</option>
+            <option value="seconds">Second(s)</option>
+          </select>
+
+          <button type="submit" id="start-btn">START</button>
+        </form>
+
+        <p id="countdown">00:00:00</p>
+  
+
+        <div class="Buttons">
+          <button id="stop-btn" disabled>STOP</button>
+          <button id="reset-btn" disabled>RESET</button>
+        </div>
+
+        <audio id="notificationsound" src="./resources/notificationsound.mp3"></audio>
+      </div>
+
+
+      <div id='taskListBox'>
+          
+        <h2>TASK LIST</h2>
+
+        <div class="inputDiv">
+               <input type="text" class="input" placeholder="Task Input">
+               <button class="add">+</i></button>
+        </div>
+        <div class="container">
+        </div>
+          
+      </div>
+  
+    </div>
+
+</body>
+</html>
